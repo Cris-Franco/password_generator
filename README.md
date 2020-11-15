@@ -20,3 +20,5 @@ I created a password generator that had to fit the following criteria:
 * THEN the password is either displayed in an alert or written to the page
 
 ![Password Generator](/Assets/03-javascript-homework-demo.png)
+
+[Deployed Site](https://cris-franco.github.io/password_generator/)
