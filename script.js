@@ -13,3 +13,10 @@ function generatePassword() {
     
     var newPassword = "";
     var passwordCharset = "";
+
+//Prompt for password length
+var passwordLengthInput = prompt("How many characters?");
+if (Number(passwordLengthInput < 8) | Number(passwordLengthInput > 128) | isNaN(passwordLengthInput)) {
+    alert("Please enter a number between 8 and 128!");
+    return;
+} 
