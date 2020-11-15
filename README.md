@@ -1,7 +1,7 @@
 # Password Generator
 ---
 ## Decsription
-I created a password generator that had to fit the following criteria.
+I created a password generator that had to fit the following criteria:
 
 * GIVEN I need a new, secure password
 * WHEN I click the button to generate a password
