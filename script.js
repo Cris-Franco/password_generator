@@ -48,3 +48,19 @@ if (numericalCharactersInput) {
 if (passwordCharset === "") {
     alert("You must choose at least one type of character.");
   }
+
+  //Conditional if password standards are met
+if (Number(passwordLengthInput >= 8) && Number(passwordLengthInput <= 128)) {
+    //Loop to generate new password
+    for (var i = 0; i < passwordLengthInput; i++) {
+        newPassword += passwordCharset.charAt(Math.floor(Math.random() * passwordCharset.length));
+    };
+  //Storing generated password
+  localStorage.setItem("password", newPassword);
+  var newGenPassword = localStorage.getItem("password");
+  passwordTextarea.textContent = newGenPassword;
+  };
+
+//Generate password event button
+};
+generateButton.addEventListener("click", generatePassword);
