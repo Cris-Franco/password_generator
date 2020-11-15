@@ -44,3 +44,7 @@ var numericalCharactersInput = confirm("Do you want numbers?");
 if (numericalCharactersInput) {
     passwordCharset += numericalCharacters;
 }
+//Alert if no type of characters were selected
+if (passwordCharset === "") {
+    alert("You must choose at least one type of character.");
+  }
